@@ -13,7 +13,6 @@ import {
   VStack,
   InputGroup,
   InputRightElement,
-  Image,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { SearchIcon, LockIcon } from '@chakra-ui/icons'
@@ -28,9 +27,9 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Grid templateColumns="1fr 480px 480px 1fr" gap={5} minH="100vh" p={3}>
         <GridItem w='100%' h='100%'></GridItem>
-        <GridItem display='grid' alignContent='center' w='100%' h='100%'>
-          <Box boxSize='sm'>
-           <LockIcon w='250px' h='250px' ></LockIcon>
+        <GridItem display='flex' justifyContent='flex-end' w='100%' h='100%'>
+          <Box display='flex' align-items= 'flex-end' justify-content= 'flex-end'  boxSize='sm'>
+           <LockIcon w='100px' h='100px'></LockIcon>
           </Box>
         </GridItem>
         <GridItem display='grid' alignContent='center' w='100%' h="100%">
@@ -50,7 +49,10 @@ export const App = () => {
                   </Button>
                 </InputRightElement>
               </InputGroup>
-              <Button>Login</Button>
+              <Box display='flex'  pl='20%' pr='20%' justifyContent='space-between' w='100%'>
+              <Button>Enter</Button>
+              <Button>Register</Button>
+              </Box>
             </VStack>
           </Box>
         </GridItem>
