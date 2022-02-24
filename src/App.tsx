@@ -28,7 +28,7 @@ export const App = () => {
       <Grid templateColumns="1fr 480px 480px 1fr" gap={5} minH="100vh" p={3}>
         <GridItem w='100%' h='100%'></GridItem>
         <GridItem display='flex' justifyContent='flex-end' w='100%' h='100%'>
-          <Box display='flex' align-items= 'flex-end' justify-content= 'flex-end'  boxSize='sm'>
+          <Box display='flex' align-items='flex-end' justify-content='flex-end' boxSize='sm'>
            <LockIcon w='100px' h='100px'></LockIcon>
           </Box>
         </GridItem>
