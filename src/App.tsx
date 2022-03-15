@@ -13,6 +13,8 @@ import {
   VStack,
   InputGroup,
   InputRightElement,
+  Spacer,
+  Flex,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { SearchIcon, LockIcon } from '@chakra-ui/icons'
@@ -27,17 +29,17 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Grid templateColumns="1fr 480px 480px 1fr" gap={5} minH="100vh" p={3}>
         <GridItem w='100%' h='100%'></GridItem>
-        <GridItem display='flex' justifyContent='flex-end' w='100%' h='100%'>
-          <Box display='flex' align-items='flex-end' justify-content='flex-end' boxSize='sm'>
-           <LockIcon w='100px' h='100px'></LockIcon>
-          </Box>
+        <GridItem>
         </GridItem>
         <GridItem display='grid' alignContent='center' w='100%' h="100%">
           <Box textAlign="right" fontSize="xl" boxShadow='lg' p='6' rounded='md'>
             <VStack spacing={8}>
-              <Text>
+              <Box display='flex' justifyContent='space-between'>
+              <LockIcon w='100px' h='100px'></LockIcon> 
+              <Text p={10} display='flex' alignItems='center'>
                 My login page
               </Text>
+              </Box>
               <InputGroup>
                 <Input placeholder="Email" />
               </InputGroup>
