@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Private() {
-  return (
-    <div>Private</div>
-  )
+export const Private = ()=>{
+    return (
+        <div>
+            <h1>Fala ai meu papa</h1>
+        </div>
+    )
 }
-
-export default Private

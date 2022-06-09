@@ -6,6 +6,8 @@ import {
   IconButtonProps,
 } from "@chakra-ui/react"
 import { FaMoon, FaSun } from "react-icons/fa"
+import { DotaBlack } from "./components/home/dotablack"
+import { DotaWhite } from "./components/home/dotawhite"
 
 type ColorModeSwitcherProps = Omit<IconButtonProps, "aria-label">
 

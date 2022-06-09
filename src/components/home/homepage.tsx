@@ -27,14 +27,12 @@ export const LoginBox = () => {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateColumns="1fr 480px 480px 1fr" gap={5} minH="100vh" p={3}>
-        <GridItem w="100%" h="100%"></GridItem>
+        <GridItem w="100%" h="100%">
+        </GridItem>
         <GridItem display="grid" justifyContent="start" alignContent="center" w="100%" h="100%">
           <VStack flexDirection="row" spacing={8}>
             <Box>
-              <DotaWhite />
-            </Box>
-            <Box>
-              <Text>Hello, on this site you will be able to become a friend of Jassa and invite him to play with you.</Text>
+              <Text display="flex" alignItems="center">Hello, on this site you will be able to become a friend of Jassa and invite him to play with you.</Text>
               {/* font-family: "Radiance","Noto Sans",sans-serif; */}
             </Box>
           </VStack>
@@ -49,7 +47,8 @@ export const LoginBox = () => {
           >
             <VStack spacing={8}>
               <Box display="flex" justifyContent="space-between">
-                <LockIcon w="100px" h="100px"></LockIcon>
+                {/* <LockIcon w="100px" h="100px"></LockIcon> */}
+                <DotaWhite/>
                 <Text p={10} display="flex" alignItems="center">
                   Jassa Friends
                 </Text>

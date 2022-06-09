@@ -6,8 +6,8 @@ export const DotaWhite = (props: React.SVGProps<SVGAElement>) => {
       fill="#000000"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
-      width="210px"
-      height="210px"
+      width="150px"
+      height="150px"
       clip-rule="evenodd"
     >
       <path
