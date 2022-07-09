@@ -48,7 +48,7 @@ export const LoginBox = () => {
             <VStack spacing={8}>
               <Box display="flex" justifyContent="space-between">
                 {/* <LockIcon w="100px" h="100px"></LockIcon> */}
-                <DotaWhite/>
+                <DotaBlack/>
                 <Text p={10} display="flex" alignItems="center">
                   Jassa Friends
                 </Text>
